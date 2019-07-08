@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/dzirt/CLionProjects/Tic-Tac-Toe/gameLogic.cpp
+gameLogic.h
+C:/Users/dzirt/CLionProjects/Tic-Tac-Toe/gameLogic.h
+
+C:/Users/dzirt/CLionProjects/Tic-Tac-Toe/gameLogic.h
+iostream
+-
+stdio.h
+-
+cstdlib
+-
+chrono
+-
+thread
+-
+
+C:/Users/dzirt/CLionProjects/Tic-Tac-Toe/main.cpp
+iostream
+-
+gameLogic.h
+C:/Users/dzirt/CLionProjects/Tic-Tac-Toe/gameLogic.h
+
