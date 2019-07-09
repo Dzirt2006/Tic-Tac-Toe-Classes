@@ -9,7 +9,7 @@ void gameLogic::Start() {
 
     //Fill up the array by empty cells
     char arr[row][columns];
-    char *ptr=&arr;
+
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < columns; j++) {
             arr[i][j] = '*';
