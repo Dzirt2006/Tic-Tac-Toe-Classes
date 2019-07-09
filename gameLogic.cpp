@@ -8,10 +8,11 @@
 void gameLogic::Start() {
 
     //Fill up the array by empty cells
-    char arr[4][9];
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 9; j++) {
-            arr[i][j] = 0;
+    char arr[row][columns];
+    char *ptr=&arr;
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < columns; j++) {
+            arr[i][j] = '*';
         }
     }
     PrintTable(arr);//print empty gamefield
@@ -24,14 +25,14 @@ void gameLogic::Start() {
 }
 
 
-void gameLogic::coutArr(char arr[][9]) {
+void gameLogic::coutArr(char arr[][columns]) {
     //block of local variables
     int rowIn, columnIn, checkIn;
     char in = ' ';// empty space for checking sequence
 
     cout << "Enter pozition(row /*space*/ column): ";
     cin >> rowIn >> columnIn;
-    if (arr[rowIn][columnIn] == 0) { //make a cell constant
+    if (arr[rowIn][columnIn] == '*') { //make a cell constant
         cout << '\n' << "Now enter X or O(lowercase...I'll check!): ";
         cin >> in;
         //Check input values.
@@ -69,10 +70,10 @@ void gameLogic::coutArr(char arr[][9]) {
 
 }
 
-void gameLogic::WinnerDetect(char arr[][9]) { //Detect the winner
+void gameLogic::WinnerDetect(char arr[][columns]) { //Detect the winner
 
     //check rows
-    if (arr[2][2] != 0 && arr[1][1] != 0 && arr[3][3]) {
+    if (arr[2][2] != '*' && arr[1][1] != '*' && arr[3][3]) {
         if (arr[1][1] == arr[1][2] && arr[1][2] == arr[1][3]) {
             system("cls");
             cout << arr[1][1] << " is Winner!";
@@ -152,7 +153,7 @@ void gameLogic::GameOver() {
     exit(0);///drop the program
 }
 
-void gameLogic::PrintTable(char arr[][9]) {
+void gameLogic::PrintTable(char arr[][columns]) {
     cout << endl;
     cout << arr[1][1] << " | " << arr[1][2] << " | " << arr[1][3] << endl;
     cout << "- | - | -" << endl;

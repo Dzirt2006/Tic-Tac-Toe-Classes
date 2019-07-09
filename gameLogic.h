@@ -21,19 +21,15 @@ public:
 
 
 
-    //array size dimmension
-    int row;
-    int column;
-
-
-
+static const size_t row=4;
+static const size_t columns=4;
 
     //prototypes
 
     void Start();
-    void coutArr(char[][9]); //! C++ requires that we specify the number of columns in the function definition
-    void PrintTable(char[][9]);
-    void WinnerDetect(char[][9]);
+    void coutArr(char[][columns]); //! C++ requires that we specify the number of columns in the function definition
+    void PrintTable(char[][columns]);
+    void WinnerDetect(char[][columns]);
     int CheckXOFirst(char);
     void GameOver();
 
