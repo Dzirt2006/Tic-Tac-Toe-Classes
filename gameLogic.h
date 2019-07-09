@@ -6,6 +6,7 @@
 #define UNTITLED2_GAMELOGIC_H
 
 #include <iostream>
+#include <string>
 
 #include <stdio.h>
 #include <cstdlib>
@@ -30,7 +31,6 @@ static const size_t columns=4;
     void coutArr(char[][columns]); //! C++ requires that we specify the number of columns in the function definition
     void PrintTable(char[][columns]);
     void WinnerDetect(char[][columns]);
-    int CheckXOFirst(char);
     void GameOver();
 
 

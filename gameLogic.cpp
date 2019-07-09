@@ -28,46 +28,28 @@ void gameLogic::Start() {
 void gameLogic::coutArr(char arr[][columns]) {
     //block of local variables
     int rowIn, columnIn, checkIn;
-    char in = ' ';// empty space for checking sequence
-
-    cout << "Enter pozition(row /*space*/ column): ";
+    static char in = 'x';// char which gonna put into array
+    static string player="Player X ";
+    cout <<player<< "enter pozition(row /*space*/ column): ";
     cin >> rowIn >> columnIn;
     if (arr[rowIn][columnIn] == '*') { //make a cell constant
-        cout << '\n' << "Now enter X or O(lowercase...I'll check!): ";
-        cin >> in;
-        //Check input values.
-        checkIn = CheckXOFirst(in);
-        switch (checkIn) {
-            case 0: //compliance sequence
-                system("cls");
-                cout << in << " moved before,it's not your time!" << endl;
-                this_thread::sleep_for(chrono::seconds(2));//w8 2 sec
-                system("cls");
-                break;
-            case 1: // regular game time
                 system("cls");
                 cout << endl;
                 arr[rowIn][columnIn] = in;
-                PrintTable(arr);//print the game firld
+                PrintTable(arr);//print the game field
                 WinnerDetect(arr);// checking the win
-                break;
-            case 2: //Secret case...
-                system("cls");
-                cout << "\n \n \n \n \n I told you...";
-                this_thread::sleep_for(chrono::seconds(2));//w8 2 sec
-                GameOver();
-                break;
-            default: // Wrong input
-                cout << endl;
-                cout << endl;
-                cout << "Wrong input.Try again.";
-                this_thread::sleep_for(chrono::seconds(2));//w8 2 sec
-                system("cls");
-                break;
-        }
+
     }
     else cout << "this cell already exist" << endl;
 
+    //auto change
+    if(in=='o'){
+        in='x';
+        player="Player X ";
+    }else {
+        in = 'o';
+        player = "Player Y ";
+    }
 }
 
 void gameLogic::WinnerDetect(char arr[][columns]) { //Detect the winner
@@ -117,27 +99,7 @@ void gameLogic::WinnerDetect(char arr[][columns]) { //Detect the winner
 }
 
 
-//This function check input value
-int gameLogic::CheckXOFirst(char a) {
-    static char sequence = ' ';//store previous player
-    cout << '_' << sequence << '_';
-    if (a == 'x' || a == 'o') {
-        //sequence check
-        if (sequence == a) {  // if x,moving again gonna be error
-            return 0;
-        }
-        else
-            sequence = a;
-        cout << '_' << sequence << '_';
-        return 1;
-    }
-    else if (a == 'X' || a == 'O') {
-        return 2;
-    }
-    else {
-        return 3;
-    }
-}
+
 
 void gameLogic::GameOver() {
     system("cls");
@@ -155,11 +117,11 @@ void gameLogic::GameOver() {
 
 void gameLogic::PrintTable(char arr[][columns]) {
     cout << endl;
-    cout << arr[1][1] << " | " << arr[1][2] << " | " << arr[1][3] << endl;
-    cout << "- | - | -" << endl;
-    cout << arr[2][1] << " | " << arr[2][2] << " | " << arr[2][3] << endl;
-    cout << "- | - | -" << endl;
-    cout << arr[3][1] << " | " << arr[3][2] << " | " << arr[3][3] << endl;
+    cout <<'\t'<< arr[1][1] << " | " << arr[1][2] << " | " << arr[1][3] << endl;
+    cout << '\t'<<"- | - | -" << endl;
+    cout <<'\t'<< arr[2][1] << " | " << arr[2][2] << " | " << arr[2][3] << endl;
+    cout << '\t'<<"- | - | -" << endl;
+    cout << '\t'<<arr[3][1] << " | " << arr[3][2] << " | " << arr[3][3] << endl;
     cout << endl;
 }
 
