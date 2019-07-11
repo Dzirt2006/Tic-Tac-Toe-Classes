@@ -15,17 +15,19 @@ void gameLogic::Start() {
             arr[i][j] = '*';
         }
     }
-    PrintTable(arr);//print empty gamefield
+    char (*arrPtr)[columns]=arr;//!!pointer to array!! after that all methods going to accept array trough pointer
+
+    PrintTable(arrPtr);//print empty gamefield
 
     //this loop is cycling the game before all fields don't filled up
     for (int i = 1; i < 9; i++) { //!start
-        coutArr(arr);
+        coutArr(arrPtr);
     }
 
 }
 
 
-void gameLogic::coutArr(char arr[][columns]) {
+void gameLogic::coutArr(char (*arr)[columns]) {
     //block of local variables
     int rowIn, columnIn, checkIn;
     static char in = 'x';// char which gonna put into array
@@ -52,7 +54,7 @@ void gameLogic::coutArr(char arr[][columns]) {
     }
 }
 
-void gameLogic::WinnerDetect(char arr[][columns]) { //Detect the winner
+void gameLogic::WinnerDetect(char (*arr)[columns]) { //Detect the winner
 
     //check rows
     if (arr[2][2] != '*' && arr[1][1] != '*' && arr[3][3]) {
@@ -115,7 +117,7 @@ void gameLogic::GameOver() {
     exit(0);///drop the program
 }
 
-void gameLogic::PrintTable(char arr[][columns]) {
+void gameLogic::PrintTable(char (*arr)[columns]) {
     cout << endl;
     cout <<'\t'<< arr[1][1] << " | " << arr[1][2] << " | " << arr[1][3] << endl;
     cout << '\t'<<"- | - | -" << endl;
