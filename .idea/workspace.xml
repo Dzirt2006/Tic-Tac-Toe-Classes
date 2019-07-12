@@ -11,7 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77116462-2464-4fca-8c41-afec39ef37f6" name="Default Changelist" comment="" />
+    <list default="true" id="77116462-2464-4fca-8c41-afec39ef37f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameLogic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameLogic.h" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic.h" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gameLogic.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-end-line="44" />
               <folding>
                 <element signature="e#101#120#0" expanded="true" />
               </folding>
@@ -54,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameLogic.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="29" selection-end-line="129" />
+            <state relative-caret-position="306">
+              <caret line="18" column="43" lean-forward="true" selection-end-line="138" />
             </state>
           </provider>
         </entry>
@@ -87,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,12 +106,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -145,23 +149,24 @@
       <workItem from="1562635719899" duration="6406000" />
       <workItem from="1562677315196" duration="1116000" />
       <workItem from="1562695003652" duration="737000" />
-      <workItem from="1562804196046" duration="4505000" />
+      <workItem from="1562804196046" duration="5488000" />
+      <workItem from="1562896476669" duration="2548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13901000" />
+    <option name="totallyTimeSpent" value="17432000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1294" height="1407" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17179903" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49961028" visible="true" weight="0.17423014" />
+      <window_info id="Structure" order="1" sideWeight="0.5003897" side_tool="true" weight="0.0854531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -195,20 +200,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic.h">
+    <entry file="file://$PROJECT_DIR$/gameLogic.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#101#120#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="43" lean-forward="true" selection-end-line="138" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="29" selection-end-line="129" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-end-line="44" />
+          <folding>
+            <element signature="e#101#120#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

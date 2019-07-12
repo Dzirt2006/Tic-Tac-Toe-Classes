@@ -30,10 +30,8 @@ static const size_t columns=4;
     void Start();
     void coutArr(char(*)[columns]); //! C++ requires that we specify the number of columns in the function definition
     void PrintTable(char(*)[columns]);
-    void WinnerDetect(char[][columns]);//or we can leave it like that, without declaration by pointer
+    void WinnerDetect(char(*)[columns]);//or we can leave it like that, without declaration by pointer
     void GameOver();
-
-
 
 
 
